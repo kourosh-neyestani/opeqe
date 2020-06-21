@@ -1,4 +1,11 @@
 // All CSS Here
-@import '~swiper/css/swiper.css';
+@import "~swiper/css/swiper.css";
 @import "./assets/css/plugins.css";
 @import "./assets/scss/style.scss";
+/*------------------------------------
+    Wrapper
+------------------------------------*/
+
+.app-wrapper {
+    padding-top: 80px;
+}
