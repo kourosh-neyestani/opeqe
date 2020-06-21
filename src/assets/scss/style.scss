@@ -1,0 +1,41 @@
+/*------------------------------------
+
+    Theme Name  : Opeqe
+    Theme URI   : http://opeqe.afracode.com/
+    Description : Opeqe - Get delivery, or takeout, from restaurants near you.
+    Author Name : Kourosh Sharifi Neyestani
+    Author URI  : https://github.com/kourosh-neyestani
+    Version     : 1.0
+
+------------------------------------*/
+/*------------------------------------
+    
+    STYLESHEET INDEXING
+    |
+    |
+    |___ Default Styles
+    |	|
+    |   |___ variables
+    |   |___ mixins
+    |   |___ reset
+    |   |___ typography
+    |   |___ extend
+    |   |___ animations
+    |   |___ spacing
+    |   |___ Helpers
+    |
+    |
+    END STYLESHEET INDEXING
+
+------------------------------------*/
+/*------------------------------------
+    Default Styles
+------------------------------------*/
+
+@import "default/variables";
+@import "default/mixins";
+@import "default/reset";
+@import "default/typography";
+@import "default/animations";
+@import "default/spacing";
+@import "default/helpers";
