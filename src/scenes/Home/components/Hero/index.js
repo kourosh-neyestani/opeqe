@@ -13,7 +13,6 @@ export default () => {
             <div className="hero-carousel">
                 <Carousel />
             </div>
-            <div className="hero-overlay" />
         </section>
     );
 };

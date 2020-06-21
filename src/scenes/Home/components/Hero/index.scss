@@ -4,9 +4,13 @@
 ------------------------------------*/
 
 .section-hero {
+    height: 480px;
+    overflow: hidden;
     position: relative;
     .hero-carousel {
+        width: 100%;
         height: 100%;
+        position: fixed;
         .slide {
             height: 480px;
             position: relative;
