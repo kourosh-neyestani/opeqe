@@ -5,7 +5,7 @@ import { useRouteMatch, NavLink } from "react-router-dom";
 import "./index.scss";
 // Images
 import Logo from "../../assets/images/logo/logo.svg";
-import ShoppingCartIcon from "../../assets/images/icons/shopping-cart.svg";
+import ShoppingCartIcon from "../../assets/images/svg/shopping-cart.svg";
 
 const links = [
     {
