@@ -1,0 +1,227 @@
+@import "../../assets/scss/default/mixins";
+@import "../../assets/scss/default/variables";
+/*------------------------------------
+    Component: Header
+------------------------------------*/
+
+.app-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    border-bottom: 1px solid $gray;
+    background-color: rgba(255, 255, 255, 0.45);
+
+    .header-wrap {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: stretch;
+        justify-content: space-between;
+
+        .header-logo {
+            width: 200px;
+
+            .logo {
+                width: 105px;
+            }
+        }
+        .header-menu {
+            width: 100%;
+            position: relative;
+
+            ul {
+                display: block;
+                list-style: none;
+                text-align: center;
+                padding: 0;
+                margin: 0 -25px;
+
+                li {
+                    font-weight: 500;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    letter-spacing: 1.2px;
+                    text-transform: uppercase;
+                    display: inline-block;
+
+                    a {
+                        display: block;
+                        position: relative;
+
+                        &:after {
+                            left: 0;
+                            bottom: -9px;
+                            width: 100%;
+                            height: 6px;
+                            opacity: 0.9;
+                            content: "";
+                            display: block;
+                            position: absolute;
+                        }
+                        &.active:after {
+                            background-color: $gray;
+                        }
+                    }
+                }
+            }
+            &:before,
+            &:after {
+                top: -30px;
+                bottom: 0;
+                width: 1px;
+                height: 80px;
+                content: "";
+                position: absolute;
+                background-color: $gray;
+            }
+            &:before {
+                left: 0;
+            }
+            &:after {
+                right: 0;
+            }
+        }
+        .header-links {
+            width: 200px;
+
+            .button-menu {
+                top: -4px;
+                float: right;
+                width: 39px;
+                height: 39px;
+                cursor: pointer;
+                display: block;
+                text-align: center;
+                position: relative;
+                padding-top: 3px;
+                margin-left: 30px;
+                border-radius: 50%;
+                background-color: $primary;
+
+                span {
+                    &,
+                    &:before,
+                    &:after {
+                        width: 24px;
+                        height: 2px;
+                        z-index: 3;
+                        display: block;
+                        margin: auto;
+                        position: relative;
+                        background-color: $base-0;
+                    }
+
+                    &:before {
+                        top: -7px;
+                        content: "";
+                    }
+                    &:after {
+                        bottom: -5px;
+                        content: "";
+                    }
+                }
+            }
+            .button-shopping-cart {
+                width: 63px;
+                float: right;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    float: left;
+                }
+                .count {
+                    top: 4px;
+                    right: 0;
+                    position: absolute;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+.app-shopping-cart {
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    color: $base-1;
+    opacity: 0;
+    z-index: 10000;
+    position: fixed;
+    visibility: hidden;
+    transition: all 0.6s;
+
+    .close-area {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        position: fixed;
+    }
+    .shopping-cart-menu {
+        right: -100%;
+        width: 320px;
+        height: 100%;
+        max-width: 90%;
+        min-height: 100%;
+        z-index: 100;
+        position: fixed;
+        overflow: hidden;
+        background-color: $base-1;
+        transition: all 0.6s;
+
+        .button-close {
+            top: 30px;
+            right: 30px;
+            width: 30px;
+            height: 30px;
+            z-index: 999;
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 50%;
+            border: 0 !important;
+
+            &:before,
+            &:after {
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                height: 2px;
+                content: "";
+                position: absolute;
+                background-color: $base-0;
+            }
+            &:before {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &:after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+    &.active {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+        .shopping-cart-menu {
+            right: 0;
+        }
+    }
+}
+
+@include media-max(992px) {
+    .app-header {
+        .header-menu {
+            display: none;
+        }
+    }
+}
