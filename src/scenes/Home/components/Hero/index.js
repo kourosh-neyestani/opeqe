@@ -30,7 +30,7 @@ function Carousel() {
                 <div className="slide">
                     <div className="image overlay-image" style={{ backgroundImage: `url(${Image1})` }} />
                     <div className="content">
-                        <Container className="container">
+                        <Container className="container" fluid>
                             <h2>Breakfast Special</h2>
                             <p>Get 15% off when you order 3 or more Blueberry Pancake Breakfast</p>
                             <button className="button button-lg button-radius button-dark">
@@ -45,7 +45,7 @@ function Carousel() {
                 <div className="slide">
                     <div className="image overlay-image" style={{ backgroundImage: `url(${Image2})` }} />
                     <div className="content">
-                        <Container className="container">
+                        <Container className="container" fluid>
                             <h2>Chief Special</h2>
                             <p>Get $10 off when you order $20 or more T-Bone Steak & Eggs</p>
                             <button className="button button-lg button-radius button-dark">

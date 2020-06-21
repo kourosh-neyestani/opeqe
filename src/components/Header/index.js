@@ -39,7 +39,7 @@ export default (props) => {
     return (
         <>
             <header className={`app-header app-header-1 ${className}`}>
-                <Container className="container">
+                <Container className="container" fluid>
                     <div className="header-wrap">
                         <div className="header-left header-logo">
                             <div className="logo">

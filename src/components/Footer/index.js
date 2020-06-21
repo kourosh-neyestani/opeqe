@@ -16,7 +16,7 @@ export default () => {
     return (
         <footer className="app-footer">
             <div className="footer-menu">
-                <Container className="container">
+                <Container className="container" fluid>
                     <Row>
                         <Col md={12} lg={5}>
                             <ul className="footer-menu-external">
@@ -59,7 +59,7 @@ export default () => {
                 </Container>
             </div>
             <div className="footer-widgets">
-                <Container className="container">
+                <Container className="container" fluid>
                     <Row>
                         <Col xs={12} sm={6} md={3} lg={3} xl={3}>
                             <div className="widget">
@@ -149,7 +149,7 @@ export default () => {
                 </Container>
             </div>
             <div className="footer-info">
-                <Container className="container">
+                <Container className="container" fluid>
                     <p>
                         Delight customers everywhere with a branded custom-built native iOS, native Android and Installable Website Application. <br />
                         Opeqe is reliable, fast and commission free all-in-one ordering solutions for multi-location or single location restaurants.

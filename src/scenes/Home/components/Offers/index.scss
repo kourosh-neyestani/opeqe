@@ -17,7 +17,9 @@
             .info {
                 width: 50%;
                 float: left;
-
+                p {
+                    display: none;
+                }
                 .tag {
                     color: #fff;
                     padding: 4px 9px;
@@ -30,6 +32,9 @@
                 }
                 .text-gray {
                     color: #a5a5a5;
+                }
+                p.active {
+                    display: block;
                 }
             }
             .options {

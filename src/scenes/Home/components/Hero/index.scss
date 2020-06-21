@@ -36,7 +36,7 @@
                     margin-bottom: 9px;
                 }
                 .button {
-                    left: 0;
+                    left: 15px;
                     bottom: 60px;
                     position: absolute;
                     span {
@@ -57,4 +57,18 @@
     .container {
         height: 100%;
     }
-}   
+}
+
+@media (min-width: 992px) {
+    .section-hero {
+        .hero-carousel {
+            .slide {
+                .content {
+                    .button {
+                        left: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

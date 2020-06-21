@@ -355,3 +355,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+@media (min-width: 992px) {
+    .container {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+}

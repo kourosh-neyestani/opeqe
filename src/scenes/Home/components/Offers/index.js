@@ -9,11 +9,11 @@ export default function Offers() {
     return (
         <section className="section section-offers">
             <div className="search-offers">
-                <Container>
+                <Container className="container" fluid>
                     <div className="search-offers-wrap">
                         <div className="search-offers-info">
                             <div className="info">
-                                <p className="info-1">
+                                <p className="info-1 active">
                                     <span className="title">ASAP Pickup</span>
                                     <span className="subtitle text-gray">Beverly Hills - 1008 Elden Way</span>
                                 </p>
