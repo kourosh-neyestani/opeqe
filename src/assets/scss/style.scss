@@ -25,6 +25,11 @@
     |   |___ Helpers
     |
     |
+    |___ Elements Styles
+    |	|
+    |   |___ Buttons
+    |
+    |
     END STYLESHEET INDEXING
 
 ------------------------------------*/
@@ -39,3 +44,9 @@
 @import "default/animations";
 @import "default/spacing";
 @import "default/helpers";
+
+/*------------------------------------
+    Elements Styles
+------------------------------------*/
+
+@import "elements/buttons";

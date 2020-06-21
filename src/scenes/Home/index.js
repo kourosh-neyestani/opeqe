@@ -1,5 +1,13 @@
 import React from "react";
+// Components
+import Hero from "./components/Hero";
+// Styles
+import "./index.scss";
 
 export default () => {
-    return <div></div>;
+    return (
+        <>
+            <Hero />
+        </>
+    );
 };
