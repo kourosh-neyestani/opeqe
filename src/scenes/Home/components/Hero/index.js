@@ -19,9 +19,14 @@ export default () => {
 
 function Carousel() {
     const settings = {
+        effect: 'fade',
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
         },
     };
     return (

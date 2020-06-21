@@ -1,0 +1,48 @@
+@import "../../assets/scss/default/mixins";
+/*------------------------------------
+    Sections: Gift Cards
+------------------------------------*/
+
+.section-gift-cards {
+    position: relative;
+    background-color: #fff;
+    @include clearfix();
+    .content {
+        width: 450px;
+        float: right;
+        max-width: 100%;
+        p {
+            line-height: 1.5;
+            margin-bottom: 10px;    
+        }
+        .content-logo {
+            text-align: center;
+            .logo {
+                width: 150px;
+                display: inline-block;
+                position: relative;
+                text-align: center;
+                padding-top: 20px;
+                margin: auto;
+                margin-bottom: 20px;
+                p {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    color: #a5a5a5;
+                    font-weight: 600;
+                    text-align: center;
+                    position: absolute;
+                    margin: auto;
+                    span {
+                        color: #996515;
+                    }
+                }
+                img {
+                    width: 110px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

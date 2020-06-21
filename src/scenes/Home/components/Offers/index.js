@@ -4,6 +4,7 @@ import { Container } from "react-grid-system";
 // Components
 import Card from "../../../../components/Card";
 import Heading from "../../../../components/Heading";
+import Applications from "../../../../components/Applications";
 // Styles
 import "./index.scss";
 // Images
@@ -95,57 +96,72 @@ export default function Offers() {
     };
 
     return (
-        <section className="section section-offers">
-            <SearchForm />
-            <div className="carousel-products">
-                <Container className="container" fluid>
-                    <Heading title="Special Offers" />
-                    <Swiper {...sliderSettings}>
-                        {offers1.map((item, index) => (
-                            <div className="slide" key={index}>
-                                <Card {...item} />
-                            </div>
-                        ))}
-                    </Swiper>
-                </Container>
-            </div>
-            <div className="carousel-products">
-                <Container className="container" fluid>
-                    <Heading title="Salad" />
-                    <Swiper {...sliderSettings}>
-                        {offers1.map((item, index) => (
-                            <div className="slide" key={index}>
-                                <Card {...item} />
-                            </div>
-                        ))}
-                    </Swiper>
-                </Container>
-            </div>
-            <div className="carousel-products">
-                <Container className="container" fluid>
-                    <Heading title="Appetizer" />
-                    <Swiper {...sliderSettings}>
-                        {offers1.map((item, index) => (
-                            <div className="slide" key={index}>
-                                <Card {...item} />
-                            </div>
-                        ))}
-                    </Swiper>
-                </Container>
-            </div>
-            <div className="carousel-products">
-                <Container className="container" fluid>
-                    <Heading title="Main Course" />
-                    <Swiper {...sliderSettings}>
-                        {offers1.map((item, index) => (
-                            <div className="slide" key={index}>
-                                <Card {...item} />
-                            </div>
-                        ))}
-                    </Swiper>
-                </Container>
-            </div>
-        </section>
+        <>
+            <section className="section section-offers">
+                <SearchForm />
+                <div className="carousel-products">
+                    <Container className="container" fluid>
+                        <Heading title="Special Offers" />
+                        <Swiper {...sliderSettings}>
+                            {offers1.map((item, index) => (
+                                <div className="slide" key={index}>
+                                    <Card {...item} />
+                                </div>
+                            ))}
+                        </Swiper>
+                    </Container>
+                </div>
+                <div className="carousel-products">
+                    <Container className="container" fluid>
+                        <Heading title="Salad" />
+                        <Swiper {...sliderSettings}>
+                            {offers1.map((item, index) => (
+                                <div className="slide" key={index}>
+                                    <Card {...item} />
+                                </div>
+                            ))}
+                        </Swiper>
+                    </Container>
+                </div>
+                <div className="carousel-products">
+                    <Container className="container" fluid>
+                        <Heading title="Appetizer" />
+                        <Swiper {...sliderSettings}>
+                            {offers1.map((item, index) => (
+                                <div className="slide" key={index}>
+                                    <Card {...item} />
+                                </div>
+                            ))}
+                        </Swiper>
+                    </Container>
+                </div>
+                <div className="carousel-products">
+                    <Container className="container" fluid>
+                        <Heading title="Main Course" />
+                        <Swiper {...sliderSettings}>
+                            {offers1.map((item, index) => (
+                                <div className="slide" key={index}>
+                                    <Card {...item} />
+                                </div>
+                            ))}
+                        </Swiper>
+                    </Container>
+                </div>
+                <Applications />
+                <div className="carousel-products">
+                    <Container className="container" fluid>
+                        <Heading title="Main Course" />
+                        <Swiper {...sliderSettings}>
+                            {offers1.map((item, index) => (
+                                <div className="slide" key={index}>
+                                    <Card {...item} />
+                                </div>
+                            ))}
+                        </Swiper>
+                    </Container>
+                </div>
+            </section>
+        </>
     );
 }
 
