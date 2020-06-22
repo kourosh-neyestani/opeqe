@@ -5,8 +5,12 @@
 
 .section-gift-cards {
     position: relative;
+    padding-bottom: 60px;
     background-color: #fff;
     @include clearfix();
+    .el-vertical-line {
+        margin-bottom: 60px;
+    }
     .content {
         width: 450px;
         float: right;

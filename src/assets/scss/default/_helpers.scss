@@ -267,3 +267,10 @@
 .section {
     background: #fff;
 }
+// el-vertical-line
+.el-vertical-line {
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: rgba(0, 0, 0, 0.25);
+}
