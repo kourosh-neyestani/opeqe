@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "react-grid-system";
-import { useRouteMatch, NavLink } from "react-router-dom";
+import { useRouteMatch, NavLink, Link } from "react-router-dom";
 // Styles
 import "./index.scss";
 // Images
@@ -48,7 +48,9 @@ export default (props) => {
                     <div className="header-wrap">
                         <div className="header-left header-logo">
                             <div className="logo">
-                                <img src={Logo} alt="Opeqe Logo" />
+                                <Link to={`/`}>
+                                    <img src={Logo} alt="Opeqe Logo" />
+                                </Link>
                             </div>
                         </div>
                         <div className="header-center header-menu">
