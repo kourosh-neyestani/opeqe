@@ -1,13 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { HashRouter, Route } from "react-router-dom";
+import App from "./App";
+import Error404 from "./components/Error404";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <HashRouter>
+        <div>
+            <Route render={({ location }) => (location.state && location.state.is404 ? <Error404 /> : <App />)} />
+        </div>
+    </HashRouter>,
+    document.getElementById("root")
 );
 
 serviceWorker.unregister();
