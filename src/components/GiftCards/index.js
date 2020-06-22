@@ -13,7 +13,9 @@ export default () => {
                 <Container>
                     <Row>
                         <Col lg={6}>
-                            <img src={Gifts} alt="Gift Cards" />
+                            <div className="git-card-image">
+                                <img src={Gifts} alt="Gift Cards" />
+                            </div>
                         </Col>
                         <Col lg={6}>
                             <div className="content">
