@@ -111,13 +111,17 @@ export default () => {
             type: 'progressbar',
           },
         breakpoints: {
-            992: {
-                slidesPerView: 3,
+            1200: {
+                slidesPerView: 3.1,
                 spaceBetween: 9,
             },
+            992: {
+                slidesPerView: 2.3,
+                spaceBetween: 15,
+            },
             690: {
-                slidesPerView: 1,
-                spaceBetween: 90,
+                slidesPerView: 1.5,
+                spaceBetween: 15,
             },
             320: {
                 slidesPerView: 1.1,

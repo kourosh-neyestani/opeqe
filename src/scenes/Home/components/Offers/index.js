@@ -1,6 +1,6 @@
 import React from "react";
 import Swiper from "react-id-swiper";
-import { Container } from "react-grid-system";
+import { Container, Hidden } from "react-grid-system";
 // Components
 import Card from "../../../../components/Card";
 import Heading from "../../../../components/Heading";
@@ -42,22 +42,26 @@ function SearchForm() {
                                 <span className="subtitle tag">What's Your Address ?</span>
                             </p>
                         </div>
-                        <div className="options">
-                            <span className="label">Change</span>
-                            <span className="title active">Delivery</span>
-                            <span className="divider">or</span>
-                            <span className="title">Pickup</span>
+                        <Hidden xs sm md>
+                            <div className="options">
+                                <span className="label">Change</span>
+                                <span className="title active">Delivery</span>
+                                <span className="divider">or</span>
+                                <span className="title">Pickup</span>
+                            </div>
+                        </Hidden>
+                    </div>
+                    <Hidden xs sm md>
+                        <div className="search-offers-form">
+                            <button className="button button-select">
+                                <span>ALL</span>
+                            </button>
+                            <input type="text" placeholder="Looking for something?" />
+                            <button className="button bg-primary button-search">
+                                <img src={SearchIcon} alt="icon" />
+                            </button>
                         </div>
-                    </div>
-                    <div className="search-offers-form">
-                        <button className="button button-select">
-                            <span>ALL</span>
-                        </button>
-                        <input type="text" placeholder="Looking for something?" />
-                        <button className="button bg-primary button-search">
-                            <img src={SearchIcon} alt="icon" />
-                        </button>
-                    </div>
+                    </Hidden>
                 </div>
             </Container>
         </div>

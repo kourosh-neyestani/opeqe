@@ -77,11 +77,12 @@
 }
 @media (max-width: 992px) {
     .section-hero {
-        height: 100vh;
+        height: 390px;
+        background-color: red;
         .hero-carousel {
             position: relative;
             .slide {
-                height: calc(100vh - 180px);
+                height: 390px;
                 .content {
                     p {
                         font-size: 14px;
