@@ -1,0 +1,13 @@
+/*------------------------------------
+    Carousel
+------------------------------------*/
+
+.carousel-products {
+    .swiper-pagination {
+        top: -22px !important;
+        height: 1px !important;
+        .swiper-pagination-progressbar-fill {
+            height: 2px !important;
+        }
+    }
+}

@@ -4,158 +4,23 @@ import { Container } from "react-grid-system";
 // Components
 import Card from "../../../../components/Card";
 import Heading from "../../../../components/Heading";
+import Carousel from "../../../../components/Carousel";
 import Applications from "../../../../components/Applications";
 // Styles
 import "./index.scss";
 // Images
 import SearchIcon from "../../../../assets/images/svg/search.svg";
 
-const offers1 = [
-    {
-        type: "Salad",
-        time: "5-9 Mins",
-        title: "My Hammy & Cheese Omelette",
-        price: "$6.0",
-        image: "https://cdn.opeqe.com/image/menu/l/1.jpg",
-        subtitle: "American, Main Course",
-        freeDelivery: false,
-    },
-    {
-        type: "Fastfood",
-        time: "6-12 Mins",
-        title: "Quarter Dark and Leg",
-        price: "$12.0",
-        image: "https://cdn.opeqe.com/image/menu/l/2.jpg",
-        subtitle: "Italian, Main Course",
-        freeDelivery: true,
-    },
-    {
-        type: "Fastfood",
-        time: "5-7 Mins",
-        title: "Avocado Bacon Cheeseburger",
-        price: "$32.0",
-        image: "https://cdn.opeqe.com/image/menu/l/3.jpg",
-        subtitle: "American, Main Course",
-        freeDelivery: false,
-    },
-    {
-        type: "Pancake",
-        time: "15-30 Mins",
-        title: "Cinnamon Roll Pancake",
-        price: "$18.0",
-        image: "https://cdn.opeqe.com/image/menu/l/4.jpg",
-        subtitle: "French, Main Course",
-        freeDelivery: false,
-    },
-    {
-        type: "Salad",
-        time: "5-7 Mins",
-        title: "Roasted Chicken Salad",
-        price: "$12.0",
-        image: "https://cdn.opeqe.com/image/menu/l/5.jpg",
-        subtitle: "Italian, Main Course",
-        freeDelivery: true,
-    },
-    {
-        type: "Pancake",
-        time: "3-9 Mins",
-        title: "Fastfood & Cheese Salad",
-        price: "$14.0",
-        image: "https://cdn.opeqe.com/image/menu/l/6.jpg",
-        subtitle: "American, Main Course",
-        freeDelivery: true,
-    },
-];
-
 export default function Offers() {
-    const sliderSettings = {
-        spaceBetween: 50,
-        slidesPerView: "auto",
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 9,
-            },
-            690: {
-                slidesPerView: 1,
-                spaceBetween: 60,
-            },
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-        },
-    };
-
     return (
         <>
             <section className="section section-offers">
                 <SearchForm />
-                <div className="carousel-products">
-                    <Container className="container" fluid>
-                        <Heading title="Special Offers" />
-                        <Swiper {...sliderSettings}>
-                            {offers1.map((item, index) => (
-                                <div className="slide" key={index}>
-                                    <Card {...item} />
-                                </div>
-                            ))}
-                        </Swiper>
-                    </Container>
-                </div>
-                <div className="carousel-products">
-                    <Container className="container" fluid>
-                        <Heading title="Salad" />
-                        <Swiper {...sliderSettings}>
-                            {offers1.map((item, index) => (
-                                <div className="slide" key={index}>
-                                    <Card {...item} />
-                                </div>
-                            ))}
-                        </Swiper>
-                    </Container>
-                </div>
-                <div className="carousel-products">
-                    <Container className="container" fluid>
-                        <Heading title="Appetizer" />
-                        <Swiper {...sliderSettings}>
-                            {offers1.map((item, index) => (
-                                <div className="slide" key={index}>
-                                    <Card {...item} />
-                                </div>
-                            ))}
-                        </Swiper>
-                    </Container>
-                </div>
-                <div className="carousel-products">
-                    <Container className="container" fluid>
-                        <Heading title="Main Course" />
-                        <Swiper {...sliderSettings}>
-                            {offers1.map((item, index) => (
-                                <div className="slide" key={index}>
-                                    <Card {...item} />
-                                </div>
-                            ))}
-                        </Swiper>
-                    </Container>
-                </div>
+                <Carousel />
+                <Carousel />
+                <Carousel />
+                <Carousel />
                 <Applications />
-                <div className="carousel-products">
-                    <Container className="container" fluid>
-                        <Heading title="Main Course" />
-                        <Swiper {...sliderSettings}>
-                            {offers1.map((item, index) => (
-                                <div className="slide" key={index}>
-                                    <Card {...item} />
-                                </div>
-                            ))}
-                        </Swiper>
-                    </Container>
-                </div>
             </section>
         </>
     );
