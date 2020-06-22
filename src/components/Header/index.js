@@ -6,6 +6,7 @@ import "./index.scss";
 // Images
 import Logo from "../../assets/images/logo/logo.svg";
 import ShoppingCartIcon from "../../assets/images/svg/shopping-cart.svg";
+import ShoppingCartIcon2 from "../../assets/images/svg/shopping-cart-2.svg";
 
 const links = [
     {
@@ -34,6 +35,10 @@ export default (props) => {
     const handleClick = (e) => {
         e.preventDefault();
         setDisplayCart(!displayCart);
+    };
+
+    const handleClickCheckout = (e) => {
+        alert("Add some product in the cart!");
     };
 
     return (
@@ -71,8 +76,27 @@ export default (props) => {
             <aside className={`app-shopping-cart ${displayCart && "active"}`}>
                 <div className="shopping-cart-menu">
                     <button className="button button-close" onClick={(e) => handleClick(e)}></button>
+                    <div className="display-center">
+                        <div className="shopping-cart-inner">
+                            <div className="cart-count">
+                                <img src={ShoppingCartIcon2} alt="Opeqe | Shopping Cart" />
+                            </div>
+                            <h3>Add some products in the cart.</h3>
+                        </div>
+                    </div>
+                    <div className="shopping-cart-footer">
+                        <ul>
+                            <li>Subtotal</li>
+                            <li>
+                                <span className="price">$ 0.00</span>
+                            </li>
+                        </ul>
+                        <button className="button button-dark button-lg button-block" onClick={(e) => handleClickCheckout(e)}>
+                            CHECKOUT
+                        </button>
+                    </div>
                 </div>
-                <span className="close-area" onClick={(e) => handleClick(e)}/>
+                <span className="close-area" onClick={(e) => handleClick(e)} />
             </aside>
         </>
     );
