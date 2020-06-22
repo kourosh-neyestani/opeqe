@@ -76,17 +76,13 @@ export default function Offers() {
             prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-            1024: {
+            992: {
                 slidesPerView: 3,
                 spaceBetween: 9,
             },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
+            690: {
+                slidesPerView: 1,
+                spaceBetween: 60,
             },
             320: {
                 slidesPerView: 1,

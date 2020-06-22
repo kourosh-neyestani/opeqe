@@ -19,7 +19,7 @@ export default () => {
 
 function Carousel() {
     const settings = {
-        effect: 'fade',
+        effect: "fade",
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

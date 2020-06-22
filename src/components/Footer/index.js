@@ -61,7 +61,7 @@ export default () => {
             <div className="footer-widgets">
                 <Container className="container">
                     <Row>
-                        <Col xs={12} sm={6} md={3} lg={3} xl={3}>
+                        <Col xs={12} sm={6} md={4} lg={3} xl={3}>
                             <div className="widget">
                                 <div className="widget-logo">
                                     <span>Powered By</span>
@@ -69,7 +69,7 @@ export default () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={12} sm={6} md={3} lg={3} xl={3}>
+                        <Col xs={12} sm={6} md={4} lg={3} xl={3}>
                             <div className="widget">
                                 <h3>Main Menu</h3>
                                 <ul>
@@ -79,7 +79,7 @@ export default () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col xs={12} sm={6} md={3} lg={3} xl={3}>
+                        <Col xs={12} sm={6} md={4} lg={3} xl={3}>
                             <div className="widget">
                                 <h3>Orders</h3>
                                 <ul>
@@ -92,7 +92,7 @@ export default () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col xs={12} sm={6} md={3} lg={3} xl={3}>
+                        <Col xs={12} sm={6} md={4} lg={3} xl={3}>
                             <div className="widget">
                                 <h3>Reservation</h3>
                                 <ul>
@@ -105,7 +105,7 @@ export default () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col xs={12} sm={6} md={3} lg={3} xl={3}>
+                        <Col xs={12} sm={6} md={4} lg={3} xl={3}>
                             <div className="widget">
                                 <h3>Profile</h3>
                                 <ul>
@@ -118,7 +118,7 @@ export default () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col xs={12} sm={6} md={3} lg={3} xl={3}>
+                        <Col xs={12} sm={6} md={4} lg={3} xl={3}>
                             <div className="widget">
                                 <h3>Special Offers</h3>
                                 <ul>
@@ -131,7 +131,7 @@ export default () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col xs={12} sm={6} md={3} lg={3} xl={3}>
+                        <Col xs={12} sm={6} md={4} lg={3} xl={3}>
                             <div className="widget">
                                 <h3>Support</h3>
                                 <ul>
