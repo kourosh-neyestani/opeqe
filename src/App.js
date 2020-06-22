@@ -17,7 +17,7 @@ function App() {
             <Header />
             <Switch>
                 <Route path="/sign-in" component={SignIn} exact />
-                <Route path="/" component={Home} exact/>
+                <Route path="/" component={Home} />
                 <Route component={RedirectAs404} />
             </Switch>
             <MobileMenu />

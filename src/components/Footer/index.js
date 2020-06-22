@@ -35,22 +35,22 @@ export default () => {
                         <Col md={12} lg={7}>
                             <ul className="footer-menu-internal">
                                 <li>
-                                    <Link to={`/about`}>About</Link>
+                                    <Link to={`/sign-in`}>About</Link>
                                 </li>
                                 <li>
-                                    <Link to={`/services`}>Services</Link>
+                                    <Link to={`/sign-in`}>Services</Link>
                                 </li>
                                 <li>
-                                    <Link to={`/support`}>Support</Link>
+                                    <Link to={`/sign-in`}>Support</Link>
                                 </li>
                                 <li>
-                                    <Link to={`/gallery`}>Gallery</Link>
+                                    <Link to={`/sign-in`}>Gallery</Link>
                                 </li>
                                 <li>
-                                    <Link to={`/terms`}>Terms</Link>
+                                    <Link to={`/sign-in`}>Terms</Link>
                                 </li>
                                 <li>
-                                    <Link to={`/locations`}>Locations</Link>
+                                    <Link to={`/sign-in`}>Locations</Link>
                                 </li>
                             </ul>
                         </Col>

@@ -11,19 +11,19 @@ import ShoppingCartIcon2 from "../../assets/images/svg/shopping-cart-2.svg";
 const links = [
     {
         title: "Home",
-        path: "/",
+        path: "",
     },
     {
         title: "Orders",
-        path: "orders",
+        path: "sign-in",
     },
     {
         title: "Shop",
-        path: "shop",
+        path: "sign-in",
     },
     {
         title: "News",
-        path: "news",
+        path: "sign-in",
     },
 ];
 
