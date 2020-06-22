@@ -1,0 +1,42 @@
+/*------------------------------------
+    Mobile Menu
+------------------------------------*/
+
+.app-mobile-menu {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 39px;
+    z-index: 120;
+    position: fixed;
+    padding: 0 15px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+
+    ul {
+        max-width: 330px;
+        margin: auto;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+        li {
+            width: 51px;
+            height: 39px;
+            padding: 4px 6px;
+            img {
+                width: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .app-mobile-menu { 
+        display: none;
+    }
+}

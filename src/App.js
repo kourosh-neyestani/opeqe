@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import MobileMenu from "./components/MobileMenu";
 // Scenes
 import Home from "./scenes/Home";
 // Styles
@@ -16,6 +17,7 @@ function App() {
                 <Switch>
                     <Route path="/" component={Home} />
                 </Switch>
+                <MobileMenu />
                 <Footer />
             </div>
         </Router>
